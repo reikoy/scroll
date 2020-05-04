@@ -9,7 +9,7 @@ function a(el){
     }
     return top
 }
-window.addEventListener('scroll',function(){
+window.onscroll=function(){
     let top=a(el)
     console.log(top)
     let clientW=document.documentElement.clientHeight
@@ -21,4 +21,4 @@ window.addEventListener('scroll',function(){
         console.log('出去了')
     }
 
-})
+}
