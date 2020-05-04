@@ -164,61 +164,9 @@
     </div>
     <div class="box4 ">5</div>
 </div>
-    <!-- <script src="demo.js"></script> -->
-    <!-- <script>
-
-        let els = document.querySelector('.box4')
-
-        function offset(el) {
-            let flag
-            let par = el.offsetParent
-            let t = el.offsetTop
-            while (par && par.tagName !== 'BODY') {
-                t += par.clientTop
-                t += par.offsetTop
-                par = par.offsetParent
-            }
-            var windowHeight = document.documentElement.clientHeight;
-            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop
-            if (t <= scrollTop + windowHeight && el.clientHeight + t >= scrollTop) {
-                flag = true
-                console.log('在可视区')
-            } else {
-                flag = false
-                console.log('不在可视区')
-            }
-            return flag
-        }
-        window.addEventListener("scroll", function (event) {
-            offset(els)
-        });
-    </script> -->
+     <script src="demo.js"></script>
 <script>
     let el=document.querySelector('.box3')
-    function a(el){
-        let par=el.offsetParent
-        let top=el.offsetTop;
-        while (par&&par.tagName!=='BODY') {
-            top+=par.clientTop
-            top+=par.offsetTop
-            par = par.offsetParent
-        }
-        return top
-    }
-    window.addEventListener('scroll',function(){
-        let top=a(el)
-        console.log(top)
-        let clientW=document.documentElement.clientHeight
-
-        let clientT=document.documentElement.scrollTop
-        console.log(clientT+clientW)
-        if (top+el.clientHeight>=clientT&& top<=clientT+clientW) {
-            console.log('进来了')
-        }else {
-            console.log('出去了')
-        }
-
-    })
 </script>
 </body>
 
