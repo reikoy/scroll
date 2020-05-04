@@ -13,7 +13,6 @@ window.addEventListener('scroll',function(){
     let top=a(el)
     console.log(top)
     let clientW=document.documentElement.clientHeight
-
     let clientT=document.documentElement.scrollTop
     console.log(clientT+clientW)
     if (top+el.clientHeight>=clientT&& top<=clientT+clientW) {
